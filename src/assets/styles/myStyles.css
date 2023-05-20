@@ -1,0 +1,328 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-nav { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 40px;
+    width: 100%;
+    background-color: #61d1a1;
+    /* background-color: #5d23c9; */
+    box-shadow: 0px 2px 2px #666;
+    z-index: 150;
+    position: relative;
+  
+  }
+  
+  .ab-btn {
+    min-width: 35px;
+    min-height: 35px;
+    
+  }
+    .ab-btn img{
+      max-width: 35px;
+      max-height: 35px;
+    }
+  
+  .container-mediaPlayer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 25px 40px;
+    background: -prefix-linear-gradient(top, #56C596, #329D9C);
+    background: linear-gradient(to bottom, #56C596, #329D9C);
+    /* background: -prefix-linear-gradient(top, #5d23c9, #91329d);
+    background: linear-gradient(to bottom, #5d23c9, #91329d); */
+    border-radius: 0 0 20px 20px;
+    z-index: 100;
+    position: relative;
+  }
+  
+  .container-infoSong {
+    align-self: center;
+  }
+  
+  .container-imageAlbum {
+    max-width: 280px;
+    max-height: 280px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .image-album {
+    max-width: 280px;
+    max-height: 280px;
+    border-radius: 10px;
+  }
+  
+  .title-band {
+    color: black;
+    font-size: 28px;
+    margin: 10px 0 0 0;
+    text-align: left;
+  }
+  
+  .title-album {
+    color: black;
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    text-align: left;
+  }
+  
+  .title-song {
+    color: #333;
+    font-size: 18px;
+    margin: 15px 0;
+    text-align: left;
+  }
+  
+  .bar-under {
+    width: 280px;
+    height: 5px;
+    background: #CDCDCD;
+    border-radius: 50px;
+    align-self: center;
+  }
+  .bar-upper {
+    width: 0;
+    height: 5px;
+    background: #fafafa;
+    border-radius: 50px;
+  }
+  
+  .time-song {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 5px 0 0 0;
+    color: #fafafa;
+    font-size: 14px;
+    width: 280px;
+  }
+  
+  .control-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    margin: 5px 0;
+  }
+  
+    .previous-btn {
+      min-width: 30px;
+      min-height: 30px;
+    }
+      .previous-btn img{
+        max-width: 30px;
+        max-height: 30px;
+      }
+  
+    .play-btn {
+      min-width: 80px;
+      min-height: 80px;
+      margin: 0 30px;
+      border-radius: 50%;
+    }
+      .play-btn img{
+        max-width: 80px;
+        max-width: 80px;
+      }
+  
+    .pause-btn {
+      min-width: 80px;
+      min-height: 80px;
+      margin: 0 30px;
+      border-radius: 50%;
+    }
+      .pause-btn img{
+        max-width: 80px;
+        max-width: 80px;
+      }
+    
+  
+    .next-btn img{
+      min-width: 30px;
+      min-height: 30px;
+    }
+      .next-btn img{
+        max-width: 30px;
+        max-height: 30px;
+        transform: rotate(180deg);
+      }
+  
+  
+  .volume-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 20px 0 0 0;
+  }
+  
+    .increase-btn {
+      min-width: 30px;
+      min-height: 30px;
+    }
+      .increase-btn img{
+        max-width: 30px;
+        max-height: 30px;
+      }
+  
+    .sound-btn {
+      min-width: 30px;
+      min-height: 30px;
+      margin: 0 50px;
+    }
+      .sound-btn img{
+        max-width: 40px;
+        max-height: 40px;
+      }
+  
+    .mute-btn {
+      min-width: 30px;
+      min-height: 30px;
+      margin: 0 50px;
+    }
+      .mute-btn img{
+        max-width: 40px;
+        max-height: 40px;
+      }
+  
+    .decrease-btn {
+      min-width: 30px;
+      min-height: 30px;
+    }
+      .decrease-btn img{
+        max-width: 30px;
+        max-height: 30px;
+      }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .container-lyrics {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #2A2A2A;
+    min-width: 280px;
+    padding: 40px 0 0 0;
+    color: #fafafa;
+    z-index: 50;
+    margin-top: -40px;
+  
+  }
+    .container-songText {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0px 40px 10px;
+      min-width: 280px;
+    }
+  
+      .title-lyrics {
+        font-size: 24px;
+        max-width: 280px;
+        margin: 20px 0 5px;
+        border-bottom: 3px solid #fafafa;
+      }
+  
+      .song-lyrics {
+        max-width: 280px;
+      }
+        .song-lyrics p {
+          color: #fafafa;
+          text-align: left;
+          font-size: 14px;
+        }
+  
+        .footer {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        
+        
+        }
+        .container-footer {
+          min-width: 280px;
+          background: -prefix-linear-gradient(top, #329D9C, #56C596);
+          background: linear-gradient(to bottom, #329D9C,#56C596);
+          
+           /* background: -prefix-linear-gradient(top, #91329d, #5d23c9);
+          background: linear-gradient(to bottom, #91329d,#5d23c9); */
+          border-radius: 20px 20px 0 0;
+          z-index: 75;
+          margin-top: -10px;
+          position: relative;
+        }
+          .container-social {
+            display: flex;
+            height: 40px;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 0 0 -10px 0;
+            padding: 50px 40px 0px;
+        
+        
+          }
+            .github-btn {
+              min-width: 35px;
+              min-height: 35px;
+              align-self: flex-end;
+              margin-bottom: 25px;
+            }
+              .github-btn img{
+                max-width: 35px;
+                max-height: 35px;
+              }
+            .linkedin-btn {
+              min-width: 35px;
+              min-height: 35px;
+              align-self: flex-end;
+              margin-bottom: 25px;
+            }
+              .linkedin-btn img{
+                max-width: 35px;
+                max-height: 35px;
+              }
+            .instagram-btn {
+              min-width: 35px;
+              min-height: 35px;
+              align-self: flex-end;
+              margin-bottom: 25px;
+            }
+              .instagram-btn img{
+                max-width: 35px;
+                max-height: 35px;
+              }
+          
+          .container-copyright {
+            align-self: center;
+            font-size: 10px;
+            /* color: #fafafa; */
+            color: black;
+            width: 100%;
+            text-align: center;
+            margin-top: 0px;
+          }
