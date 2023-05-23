@@ -1,7 +1,10 @@
+import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
 import "../../assets/styles/Player.css";
 import Player from "../Player";
+
+/* Aqui se da un ejemplo con data manual en un array */
 
 function App() {
   const [songs] = useState([
@@ -277,5 +280,73 @@ From dust`
     </div>
   );
 }
+
+
+
+/* Para que esta funcion sirva es necesario instalar strapi y axios*/
+
+// function App() {
+
+//   const [songs, setsongs] = useState([]);
+  
+
+//   const [currentSongIndex, setCurrentSongIndex] = useState(0);
+//   const [nextSongIndex, setNextSongIndex] = useState(currentSongIndex + 1);
+
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const { data: response } = await axios.get(
+//           "http://localhost:1337/api/music-players?populate=*"
+//         );
+//         let _musics = response.data;
+  
+//         _musics.map((music) => {
+//           let pload = {
+//             title: music.attributes.title,
+//             artist: music.attributes.artist,
+//             lyric: music.attributes.lyric, 
+//             img_src: music.attributes.img_src,          
+//             src: "http://localhost:1337" + music.attributes.src.data.attributes.url
+            
+//           };
+//           console.log(pload);
+//           setsongs((oldSongs) => [...oldSongs, pload]);
+//         });
+//       } catch (error) {
+//         console.error(error);
+//       }
+//     };
+  
+//     fetchData();
+//   }, []);
+  
+
+//   useEffect(() => {
+//     setNextSongIndex(() => {
+//       if (currentSongIndex + 1 > songs.length - 1) {
+//         return 0;
+//       } else {
+//         return currentSongIndex + 1;
+//       }
+//     });
+//   }, [currentSongIndex]);
+
+//   return (
+//     <div className="App">
+//       {songs.length > 0 && (
+//         <>
+//           <Player
+//             currentSongIndex={currentSongIndex}
+//             setCurrentSongIndex={setCurrentSongIndex}
+//             nextSongIndex={nextSongIndex}
+//             songs={songs}
+//           />
+//         </>
+//       )}
+//     </div>
+//   );
+// };
+
 
 export default App;

@@ -130,95 +130,82 @@ body {
 }
 
   .previous-btn {
-    min-width: 30px;
-    min-height: 30px;
-  }
-    .previous-btn img{
-      max-width: 30px;
-      max-height: 30px;
-    }
-
-  .play-btn {
-    min-width: 80px;
-    min-height: 80px;
-    margin: 0 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
     border-radius: 50%;
   }
-    .play-btn img{
-      max-width: 80px;
-      max-width: 80px;
-    }
-
-  .pause-btn {
-    min-width: 80px;
-    min-height: 80px;
-    margin: 0 30px;
-    border-radius: 50%;
-  }
-    .pause-btn img{
-      max-width: 80px;
-      max-width: 80px;
-    }
   
-
-  .next-btn img{
-    min-width: 30px;
-    min-height: 30px;
+  .play-btn {
+    width: 80px;
+    height: 80px;
+    margin: 0 30px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
   }
-    .next-btn img{
-      max-width: 30px;
-      max-height: 30px;
-      transform: rotate(180deg);
-    }
-
-
-.volume-btns {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  margin: 20px 0 0 0;
-}
-
+  
+  .pause-btn {
+    width: 80px;
+    height: 80px;
+    margin: 0 30px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .next-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  .volume-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: 20px 0 0 0;
+  }
+  
   .increase-btn {
-    min-width: 30px;
-    min-height: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
   }
-    .increase-btn img{
-      max-width: 30px;
-      max-height: 30px;
-    }
-
+  
   .sound-btn {
-    min-width: 30px;
-    min-height: 30px;
+    width: 30px;
+    height: 30px;
     margin: 0 50px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
   }
-    .sound-btn img{
-      max-width: 40px;
-      max-height: 40px;
-    }
-
+  
   .mute-btn {
-    min-width: 30px;
-    min-height: 30px;
+    width: 30px;
+    height: 30px;
     margin: 0 50px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
   }
-    .mute-btn img{
-      max-width: 40px;
-      max-height: 40px;
-    }
-
+  
   .decrease-btn {
-    min-width: 30px;
-    min-height: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
   }
-    .decrease-btn img{
-      max-width: 30px;
-      max-height: 30px;
-    }
-
+  
 .hidden {
   display: none;
 }
@@ -245,22 +232,32 @@ body {
     min-width: 280px;
   }
 
-    .title-lyrics {
+    .title-lyrics{
       font-size: 24px;
       max-width: 280px;
       margin: 20px 0 5px;
       border-bottom: 3px solid #fafafa;
     }
 
+    .title-lyrics {
+      font-size: 24px;
+      max-width: 280px;
+      margin: 20px auto 5px;
+      border-bottom: 3px solid #fafafa;
+      text-align: center;
+    }
+    
     .song-lyrics {
       max-width: 280px;
+      color: #fafafa;
+      text-align: center;
+      font-size: 14px;
+      white-space: pre-line;
+      word-wrap: break-word;
+      margin: 0 auto;
     }
-      .song-lyrics p {
-        color: #fafafa;
-        text-align: left;
-        font-size: 14px;
-      }
-
+    
+    
       .footer {
         display: flex;
         flex-direction: column;
